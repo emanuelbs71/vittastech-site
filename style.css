@@ -1,0 +1,482 @@
+
+/*
+  --- CORES DA MARCA --- 
+ #1a7a4a;   --verde - Cor principal, identidade 
+ #1a3cdc;   --azul - Cor secundaria, titulos e detalhes 
+ #00c8d4;   --ciano - Botoes e links 
+
+  --- CORES NEUTRAS --- 
+  #ffffff;  --branco - Fundo principal do site 
+  #f4f7f6;  --cinza - Fundo para destacar blocos e secoes 
+  #212529;  --grafite - Cor principal do texto de leitura 
+  #f8f9fa;  --branco - Texto sobre fundo escuro 
+  #0f172a;  --marinho - Fundo do rodape e cabecalho 
+
+  --- VARIACOES --- 
+  #219b5e;  --verde - Efeito de passar o mouse hover 
+  #10269e;  --azul - Sombras e bordas 
+  #e0f2fe;  --azul - Fundo sutil para icones 
+
+  --- FONTES SUGERIDAS ---
+  font-family: "Open Sans", sans-serif;
+  font-family: "Inter", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Russo One", sans-serif;
+*/
+
+*{
+    *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box ;
+ }
+
+html {
+    scroll-behavior: smooth;
+}
+ }
+
+ /*h1{
+     font-family: "Mynerve", cursive;
+     text-shadow: 4px 4px 6px #464646;
+     font-weight: 700;  
+     font-size: max(20px, 5.2vw);
+   }*/
+
+   h1 {
+    font-family: "Montserrat", sans-serif; /* Fonte elegante e forte */
+    color: #ffffff;
+    font-weight: 700;  
+    font-size: max(32px, 3.5vw);
+    line-height: 1.2;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Sombra sutil, sem borrar */
+}
+
+  /*h2{
+     font-family: "Mynerve", cursive;
+     text-shadow: 4px 4px 6px #000;
+     font-weight: 700;  
+     font-size: max(44px, 2.8vw);
+   }*/
+
+   h2 {
+    font-family: "Inter", sans-serif; /* Fonte super legível para parágrafos */
+    color: #e0f2fe; /* Um azul super clarinho, quase branco */
+    font-weight: 400;  
+    font-size: max(16px, 1.2vw);
+    line-height: 1.6;
+    margin-bottom: 40px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+   /* ---------- BOTÃO CHAMADA ---------- */
+
+/*div.chamada a {
+    font-size: max(16px, 1.8vw);
+    color: #FFF;
+    text-decoration: none;
+    padding: 20px 80px;
+    border-radius: 50px;
+    font-weight: 600;
+    background: linear-gradient(rgba(217, 197, 137, 1) 0%, rgba(140, 28, 58, 1) 50%, rgba(140, 28, 58, 1) 100%);
+    
+    display: inline-block;
+    
+    animation-name: HeaderA-moverParaCima;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: backwards;
+    transition: .3s ease-in-out;
+}
+
+ div.chamada a:hover{
+  opacity: .8;
+ } */
+
+
+ /* ---------- BOTÃO CHAMADA ---------- */
+div.chamada a {
+    font-family: "Montserrat", sans-serif;
+    font-size: max(14px, 1.1vw);
+    color: #00c8d4; /* Texto Ciano */
+    text-decoration: none;
+    padding: 15px 40px;
+    border: 2px solid #00c8d4; /* Borda Ciano, fundo transparente */
+    border-radius: 50px;
+    font-weight: 600;
+    background: transparent; 
+    
+    display: inline-block;
+    
+    animation-name: HeaderA-moverParaCima;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: backwards;
+    transition: .3s ease-in-out;
+}
+
+div.chamada a:hover {
+    background: #00c8d4; /* Preenche de ciano ao passar o mouse */
+    color: #0f172a; /* Texto fica escuro para dar contraste */
+    box-shadow: 0 0 15px rgba(0, 200, 212, 0.5); /* Leve brilho moderno */
+}
+
+    /* ---------- ELEMENTOS DO HEADER ---------- */
+
+
+header{
+
+     max-width: 100%;
+     height: 100vh;
+
+     background-image: linear-gradient(rgba(15, 23, 42, 0.4), rgba(15, 23, 42, 0.8)), url('../imagens/pagina1capa.jpg');
+     background-repeat: no-repeat;
+     background-position: center center;
+     background-size: cover;
+     position:relative;
+
+}
+
+/*  ------- NAVEGAR --------*/
+
+header nav#nav-esquerda{
+
+width: 100%;
+height: 150px;
+
+display: flex;
+flex-flow: row;
+align-items: center;
+justify-content: space-between; 
+
+}
+
+header nav#nav-esquerda div#logo{
+
+  max-width: 100px;
+  max-height: 120px;
+  margin-left: 5rem;
+}
+
+header nav#nav-esquerda div#logo img{
+
+  max-width: 100%;
+  max-height: 120%;
+}
+
+  /* ----- MENU HAMBURGUER ---- */
+
+  header nav#nav-esquerda #icone-menu{
+       display: none;
+  }
+
+  header nav#nav-esquerda ul#icone-menu{
+      list-style: none;
+  }
+
+  header nav#nav-esquerda ul#icone-menu li ion-icon{
+       font-size: 50px;
+       color #fff;
+       margin-right: 2rem;
+  }
+
+  /* ------ MENU PRINCIPAL ------- */
+
+   header nav#nav-esquerda ul.menu-principal {
+         margin-left: 5rem;
+         display: flex;
+         flex-flow: row wrap;
+   }
+
+      header nav#nav-esquerda ul.menu-principal li{
+         list-style: none; 
+         margin-right: 2rem;
+   } 
+
+      header nav#nav-esquerda ul.menu-principal li a{
+         text-decoration: none;
+         color: #fff;
+         font-size: 110%;
+         text-shadow: 4px 6px 10px #000;
+         padding-bottom: 10px;
+         transition: .3s ease-in-out;
+   } 
+
+      header nav#nav-esquerda ul.menu-principal li a:hover{
+        opacity: .6;
+        border-bottom: 1px solid #fff;
+   }
+
+     /* --- CHAMADA --- */
+
+     header div.chamada {
+       position:absolute;
+       width: 100%;
+       height: 300px ;
+       text-align: center;
+       top: 65%;
+       left: 50%;
+       transform: translate(-50%, -50%);
+
+     }
+
+     header div.chamada h1{
+    color: #FFF;
+    
+    animation-name: HeaderH1-moverParaDireita;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+}
+
+header div.chamada h2{
+    color: #D9C589;
+    
+    margin-bottom: 55px;
+    
+    animation-name: HeaderH1-moverParaEsquerda;
+    animation-duration: 1.5s;
+    animation-delay: 0.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: backwards;
+}
+
+/* ---------- SEÇÃO SOBRE ---------- */
+
+section.sobre {
+    max-width: 100%;
+    padding: 40px 15px; 
+    background-color: #ffffff; /* Fundo branco garantido */
+}
+
+/* Estilo do título */
+.titulo-sobre {
+    font-family: "Montserrat", sans-serif;
+    font-size: max(28px, 2.5vw); /* Diminuído para não estourar na tela */
+    font-weight: 700;
+    color: #0f172a; /* Azul marinho da sua paleta */
+    margin-bottom: 25px;
+    text-shadow: none; /* Removendo a sombra do h2 padrão para ficar limpo no fundo branco */
+}
+
+/* Mesclando o azul vibrante no nome da empresa */
+.titulo-sobre .destaque-azul {
+    color: #042d64; /* Azul secundário */
+}
+
+/* Estilo do parágrafo */
+.texto-sobre {
+    font-family: "Inter", sans-serif;
+    font-size: 1.1rem; /* Tamanho confortável para leitura */
+    color: #212529; /* Grafite da sua paleta, melhor que preto puro */
+    line-height: 1.8;
+    text-align: justify; /* Alinhamento justificado deixa o bloco bem profissional */
+}
+
+/* Controle do tamanho da imagem */
+.imagem-sobre {
+    max-width: 70%; /* Diminui a imagem para não dominar a tela */
+    height: auto;
+    opacity: 0.9;
+}
+
+/* Ajuste das linhas divisórias para ficarem mais discretas */
+.featurette-divider {
+    margin: 3rem 0;
+    opacity: 0.15;
+}
+
+/* ---------- SEÇÃO SERVIÇOS TECNICOS---------- */
+.servicos-tecnicos .carousel-item {
+    height: 500px; /* Define a altura fixa do carrossel */
+}
+
+.servicos-tecnicos .carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+}
+
+.servicos-tecnicos .carousel-caption h1 {
+    font-family: "Montserrat", sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.servicos-tecnicos .carousel-caption p {
+    font-family: "Inter", sans-serif;
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+/* Criando o botão Ciano específico para o carrossel */
+.btn-ciano {
+    font-family: "Montserrat", sans-serif;
+    color: #0f172a;
+    background-color: #00c8d4;
+    border-color: #00c8d4;
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
+}
+
+.btn-ciano:hover {
+    background-color: transparent;
+    color: #00c8d4;
+    border-color: #00c8d4;
+}
+
+/* ---------- CABEÇALHO DAS SUBPÁGINAS ---------- */
+.cabecalho-subpagina {
+    width: 100%;
+    height: 45vh; /* Fica com menos da metade da altura da tela */
+    background-color: #0f172a; /* Fundo azul escuro sólido por enquanto */
+    position: relative;
+}
+
+.chamada-subpagina {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 90%;
+}
+
+.chamada-subpagina h1 {
+    font-size: max(28px, 3vw);
+}
+
+/* ---------- SEÇÃO EQUIPAMENTOS (CARDS) ---------- */
+.card-equipamento {
+    border: none;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #f4f7f6; /* Fundo cinza suave da paleta */
+    border-radius: 12px;
+}
+
+.card-equipamento:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(26, 60, 220, 0.15); /* Sombra com tom do Azul Secundário */
+    border-bottom: 4px solid #1a3cdc;
+}
+
+.card-equipamento h5 {
+    color: #1a3cdc; /* Azul Secundário */
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+.card-equipamento ul {
+    list-style-type: none; /* Tira as bolinhas padrão */
+    padding-left: 0;
+    font-family: "Inter", sans-serif;
+    color: #212529;
+}
+
+.card-equipamento ul li {
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+.card-equipamento ul li::before {
+    content: "■ "; /* Quadrado charmoso no lugar da bolinha */
+    color: #00c8d4; /* Ciano da marca */
+    font-size: 0.8rem;
+    margin-right: 8px;
+}
+
+.card-equipamento .icone-nicho {
+    font-size: 1.8rem;
+    color: #00c8d4; /* Ciano da marca VittasTech */
+    vertical-align: middle;
+    margin-right: 8px;
+    margin-top: -4px; /* Ajuste fino para alinhar perfeitamente com a fonte */
+}
+
+/* ---------- SEÇÃO POR QUE ESCOLHER ---------- */
+.card-diferencial {
+    border: none;
+    background-color: #ffffff;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.card-diferencial:hover {
+    transform: translateY(-5px);
+}
+
+/* Criando o efeito da borda lateral grossa */
+.borda-ciano {
+    border-left: 6px solid #00c8d4;
+}
+
+.borda-azul {
+    border-left: 6px solid #1a3cdc;
+}
+
+.card-diferencial h5 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    color: #1a3cdc; /* Azul Secundário */
+    font-size: 1.15rem;
+}
+
+.icone-diferencial {
+    font-size: 1.5rem;
+    color: #00c8d4;
+    vertical-align: middle;
+    margin-right: 5px;
+    margin-top: -3px;
+}
+
+/* ---------- RODAPÉ ---------- */
+.rodape-vittastech {
+    background-color: #0f172a; /* Fundo Marinho */
+}
+
+.rodape-vittastech .text-ciano {
+    color: #00c8d4;
+}
+
+.links-rodape a {
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.links-rodape a:hover {
+    color: #00c8d4;
+}
+
+.mapa-container {
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+/* ---------- BOTÃO WHATSAPP FLUTUANTE ---------- */
+.btn-whatsapp-flutuante {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #25D366; /* Verde oficial WhatsApp */
+    color: #ffffff;
+    font-size: 2rem;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    z-index: 1000;
+    transition: transform 0.3s ease;
+}
+
+.btn-whatsapp-flutuante:hover {
+    transform: scale(1.1);
+    color: #ffffff;
+}
